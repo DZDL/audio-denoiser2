@@ -37,8 +37,8 @@ if __name__ == '__main__':
 
     # General description
 
-    st.title("Speech Denoising")
-    st.text("Incompleted information about this....")
+    st.title("Audio denoising - Speech Enhancement")
+    st.text("Check licenses and authors: https://github.com/DZDL/audio-denoising")
 
     # Upload file
     st.subheader("- Choose an audio file")
@@ -53,7 +53,7 @@ if __name__ == '__main__':
         st.write(file_details)
 
         #######################
-        # WAV UPLOADED FILE
+        # UPLOADED FILE
         #######################
         if (file_details['FileType'] == 'audio/wav' or
             file_details['FileType'] == 'audio/mp3' or

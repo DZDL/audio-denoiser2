@@ -1,7 +1,7 @@
 docker stop $(docker ps -aq) && docker rm $(docker ps -aq)
-docker build --tag pablogod/audio-denoising:1.01 .
-docker run --publish 8501:8501 --detach pablogod/audio-denoising:1.01
-docker run --publish 8501:8501 pablogod/audio-denoising:1.01
-docker push pablogod/audio-denoising:1.01
+docker build --tag pablogod/audio-denoising:1.02 .
+docker run --publish 8501:8501 --detach pablogod/audio-denoising:1.02
+docker run --publish 8501:8501 pablogod/audio-denoising:1.02
+docker push pablogod/audio-denoising:1.02
 
 streamlit run app.py
